@@ -1,11 +1,19 @@
 <script>
+/*
+  ДЗ:
+    Вывести список новостей
+    адрес - 'https://fakestoreapi.com/products'
+  Дополнительно:
+    Переход из листа в детальную новость
+
+*/
 export default {
   beforeMount: (el) => {
-    console.log("beforeMount")
+    // Сделать запрос к АПИ, для вывод новостей
   },
   data() {
     return {
-      hello: "Привет"
+      title: "Список новостей"
     };
   },
   setup() {
@@ -16,7 +24,7 @@ export default {
 </script>
 
 <template>
-    <h1>Список новостей</h1>
+    <h1>{{title}}</h1>
 </template>
 
 <style scoped>
